@@ -4,12 +4,12 @@ from django.contrib.auth.models import User
 # User/Employee Based Models
 class Role(models.Model):
     ROLES = (('CEO', 'CEO'), ('HR', 'HR'), ('Board Member', 'Board Member'), ('Head Caregiver', 'Head Caregiver'), ('Caregiver','Caregiver'), ('Volunteer','Volunteer'))
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="role")
-    role = models.CharField(max_length=200, null=True, choices=ROLES)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="role", null=True)
+    role = models.CharField(max_length=200, null=True, choices=ROLES, default="Volunteer")
     
 
 class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="profile")
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="profile", null=True)
     name = models.TextField(max_length=200, null=True)
     hobby = models.TextField(max_length=200, null=True)
     town = models.TextField(max_length=200, null=True)
