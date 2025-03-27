@@ -1,0 +1,64 @@
+.dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),  
+    url("volunteerbg.jpeg");
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #2e2e2e;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .sidebar-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  
+  .sidebar-title {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .sidebar-nav li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-nav a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .sidebar-nav a:hover {
+    color: #fff;
+  }
+  
+  .logout-button {
+    background: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .dashboard-content {
+    flex-grow: 1;
+    padding: 40px;
+  }
+  

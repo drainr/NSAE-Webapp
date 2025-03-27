@@ -1,0 +1,50 @@
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .dashboard-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 500px;
+    color: white;
+  }
+  
+  .dashboard-box h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .events-subtext {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .events-list {
+    text-align: left;
+  }
+  
+  .event-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .event-item h3 {
+    margin: 0 0 10px;
+    color: white;
+  }
+  
+  .event-item p {
+    margin: 5px 0;
+    color: #ddd;
+  }
+  
